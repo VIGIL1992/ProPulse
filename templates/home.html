@@ -135,9 +135,9 @@
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="{{ category.image.url }}" class="img-responsive" alt="{{ category.category_name }}">
+                    <img src="{{ category.category_image.url }}" class="img-responsive" alt="{{ category.category_name }}">
                     <div>
-                      <a href="{{ category.image.url }}" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="{{ category.category_image.url }}" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up-{{ category.category_name }}" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
@@ -156,7 +156,7 @@
                       <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-3">
                           <div class="product-main-image">
-                            <img src="{{ category.image.url }}" alt="Cool green dress with red bell" class="img-responsive">
+                            <img src="{{ category.category_image.url }}" alt="Cool green dress with red bell" class="img-responsive">
                           </div>
                           <div class="product-other-images">
                             {% comment %} <a href="javascript:;" class="active"><img alt="Berry Lace Dress" src="{% static 'assets/pages/img/products/model3.jpg' %}"></a> {% endcomment %}

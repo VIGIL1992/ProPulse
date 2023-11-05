@@ -192,8 +192,9 @@
               </div>
             </div>
             {% for product in products %}
+              {% cycle "" "" "" as rowclass %}
             <!-- BEGIN PRODUCT LIST -->
-            <div class="row product-list">
+            <div class="row product-list {% if rowclass == '1' %}new-row{% endif %}">
               <!-- PRODUCT ITEM START -->
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="product-item">
@@ -291,22 +292,7 @@ Nostrud duis molestie at dolore.</p>
                 </div>
               </div> {% endcomment %}
               <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              {% comment %} <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model6.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                      <a href="assets/pages/img/products/model6.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.html">Berry Lace Dress 2</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div>               {% endcomment %}
-              <!-- PRODUCT ITEM END -->
+              
             </div>
             <div class="row product-list">
               <!-- PRODUCT ITEM START -->
@@ -325,39 +311,8 @@ Nostrud duis molestie at dolore.</p>
                 </div>
               </div> {% endcomment %}
               <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              {% comment %} <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model5.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                        <a href="assets/pages/img/products/model5.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  <div class="sticker sticker-new"></div>
-                </div>
-              </div> {% endcomment %}
-              <!-- PRODUCT ITEM END -->
-              <!-- PRODUCT ITEM START -->
-              {% comment %} <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="assets/pages/img/products/model3.jpg" class="img-responsive" alt="Berry Lace Dress">
-                    <div>
-                        <a href="assets/pages/img/products/model3.jpg" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                  <div class="pi-price">$29.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div>               {% endcomment %}
-              <!-- PRODUCT ITEM END -->
+
+
             </div>
             <div class="row product-list">
               <!-- PRODUCT ITEM START -->
